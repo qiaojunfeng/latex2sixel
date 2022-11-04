@@ -90,12 +90,15 @@ done
 #
 # TeX
 #
+# Math symbols
+# https://en.wikibooks.org/wiki/LaTeX/Mathematics#Formatting_mathematics_symbols
 
 texsrc=$BASH_ARGV
 
 TEX=$(cat <<EOF
 \documentclass[$pt]{article}
 \usepackage{amsmath,amssymb}
+\usepackage{mathrsfs}
 \usepackage{breqn}
 \pagestyle{empty}
 \begin{document}
